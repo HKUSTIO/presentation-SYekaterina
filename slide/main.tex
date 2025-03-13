@@ -24,91 +24,625 @@
 % Remove navigation symbols
 \setbeamertemplate{navigation symbols}{}
 
-% Customize frame title
-\setbeamertemplate{frametitle}{
-    \vspace*{0.5cm}
-    \insertframetitle
-    \vspace*{0.2cm}
-    \begin{beamercolorbox}[wd=\paperwidth,ht=0.2pt]{structure}
-    \end{beamercolorbox}
-}
+
 
 % Customize itemize bullets
 \setbeamertemplate{itemize item}{\small\raise0.5pt\hbox{\textbullet}}
 \setbeamertemplate{itemize subitem}{\tiny\raise1.5pt\hbox{\textbullet}}
 
-% Packages
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{hyperref}
 
-% Title page information
-\title{Presentation Title}
-\subtitle{Subtitle}
-\author{Your Name}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{beamerappendixnote}
+\usepackage {mathtools}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+
+
+\title[Frictions in Product Markets] 
+{Frictions in Product Markets}
+
+\subtitle
+{Chapter 6: Handbook of Industrial Organization} 
+
+\author[Yekaterina Smolyakova]{Yekaterina ~Smolyakova}
+
 \institute{Hong Kong University of Science and Technology}
-\date{\today}
+
+\date[Short Occasion] 
+{\today}
 
 \begin{document}
-
-% Title page
 \begin{frame}
-    \titlepage
+\titlepage
 \end{frame}
 
-% Table of contents
-\begin{frame}{Outline}
-    \tableofcontents
+\begin{frame}{Outline}{}
+ \begin{spacing}{1.5}
+    {\footnotesize
+  \tableofcontents} 
+ \end{spacing}
 \end{frame}
 
-% Section 1
-\section{Introduction}
-\begin{frame}{Introduction}
+\begin{frame}{What Are Frictions in Product Markets?}
+\begin{spacing}{1.5}
+{\small 
+\textit{\textbf{Frictions in product market} are factors that impede the smooth functioning of markets, leading to inefficiencies in the allocation of goods and services\\}}
+
+{\footnotesize
     \begin{itemize}
-        \item First point
-        \item Second point
-        \item Third point
-    \end{itemize}
+        \item \quad \textbf{Transaction Costs}: \\
+        \quad Fees, taxes, and time required to complete a transaction
+        \item \quad \textbf{Asymmetric Information}:\\
+         \quad One party knows more than the other (used car market)
+        \item \quad \textbf{Search Frictions}:\\
+        \quad Time and effort to find suitable trading partners
+        \item \quad \textbf{Matching Frictions}: \\
+        \quad Difficulty in pairing buyers and sellers
+
+    \end{itemize}}
+\end{spacing}
 \end{frame}
 
-% Section 2
-\section{Methods}
-\begin{frame}{Methods}
-    \begin{block}{Important Block}
-        Key information goes here
-    \end{block}
-    
+
+\section{Transaction Costs}
+\begin{frame}{ }
+\centering
+{\Large Transaction Costs}
+\end{frame}
+
+\subsection{Background}
+\begin{frame}{Coase's "The Nature of the Firm" (1937)}
+\begin{spacing}{1.5}
+{
+\textit{Why do firms exist in a market economy?\\
+- Firms exist to minimize \textbf{transaction costs}\\}
+\quad \\
+{\small 
+Main Idea:
     \begin{itemize}
-        \item Method 1
-        \item Method 2
-    \end{itemize}
+        \item Using the market involves transaction costs
+        \item Firms emerge as an alternative to markets when transaction costs are high
+        \item Firms reduce costs by internalizing activities \\
+        (employment contracts, hierarchical decision-making)
+    \end{itemize}}
+}
+\end{spacing}
 \end{frame}
 
-% Section 3
-\section{Results}
-\begin{frame}{Results}
-    \begin{columns}
-        \column{0.5\textwidth}
-        \begin{itemize}
-            \item Result 1
-            \item Result 2
-        \end{itemize}
+
+
+\begin{frame}{Williamson's "Transaction Cost Economics"(1989)}
+\begin{spacing}{1.5}
+{
+\textit{\textbf{Transaction costs are not just a theoretical concept\\
+but a practical tool for analyzing real-world economic behavior\\}
+}
+{\footnotesize  Key behavioral assumptions that drive transaction costs:
+    \begin{itemize}
+        \item \textbf{Bounded Rationality:} \\
+        Decision-makers are rational but limited in their ability\\ to process information and foresee all contingencies
+        \item \textbf{Opportunism:}\\
+        Individuals may act in self-interest with guile,\\ exploiting information asymmetries or contractual gaps
         
-        \column{0.5\textwidth}
-        % Placeholder for a figure
-        \centering
-        [Your figure here]
-    \end{columns}
-\end{frame}
-
-% Section 4
-\section{Conclusion}
-\begin{frame}{Conclusion}
-    \begin{itemize}
-        \item Main finding 1
-        \item Main finding 2
-        \item Future work
     \end{itemize}
+These assumptions create the need for governance structures to mitigate\\ the risks and costs associated with transactions}}
+\end{spacing}
 \end{frame}
 
-\end{document} 
+
+
+\begin{frame}{Example: Governance Structure}
+\begin{spacing}{1.5}
+{\small
+Car manufacturer deciding whether to produce car seats internally or outsource:
+\quad \\
+    \begin{itemize}
+        \item \textbf{ Market Governance:} \\
+        If car seats are standardized and easy to source, the manufacturer may buy them from a supplier (low transaction costs)
+        \item \textbf{Hybrid Governance:}\\
+        If car seats require some customization, the manufacturer may enter a long-term contract with a supplier (moderate transaction costs).
+        \item \textbf{Hierarchical Governance:}\\
+        If car seats are highly customized and critical to the car's design, the manufacturer may produce them internally to avoid the risks of opportunism (high transaction costs)        
+    \end{itemize}
+}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Definition }
+\begin{spacing}{1.5}  
+%Williamson defines transaction costs as the costs of running the economic system, including:
+{\small
+\textit{\textbf{Transaction Costs} are the costs of running the economic system}\\
+    \begin{itemize}
+        \item \textbf{ Ex Ante Costs:}\\
+        Costs incurred before a transaction occurs\\
+        - Gathering information about prices, quality, and terms\\
+        - Finding trading partners\\
+        - Negotiating terms of the transaction\\
+        - Drafting contracts
+        \item \textbf{Ex Post Costs:} \\
+        Costs incurred after a transaction occurs\\
+        - Ensuring that the terms of the agreement are fulfilled\\   (monitoring, enforcement, adaptation to unforeseen events)
+    \end{itemize}
+}
+\end{spacing}
+\end{frame}
+
+
+
+\begin{frame}{Impact}
+\begin{spacing}{1.5}  
+{\small
+\textit{\textbf{Transaction Costs} are the costs incurred during the process\\ of buying or selling goods, beyond the price of the good itself}\\
+\quad\\
+    \begin{itemize}
+        \item They can reduce the volume of trade and limit market participation
+        \item They can lead to inefficient allocations of goods and services
+        \item They can opportunities for intermediaries that might be able to reduce these costs
+    \end{itemize}}
+
+
+\end{spacing}
+\end{frame}
+
+\subsection{Vertical Differentiation}
+
+\begin{frame}{Secondary markets for Durable Goods}
+\begin{spacing}{1.5}  
+{\small
+{Secondary markets for durable goods are particularly sensitive to transaction costs}\\
+\quad\\
+- Takes time to find buyer or seller for a used good\\
+- Negotiating the price and terms of the transaction can be costly\\
+- Ensuring that the used good meets the agreed-upon quality standards\\
+\quad\\
+These costs can significantly affect the volume and efficiency of trade in secondary markets, making them an ideal setting for studying the impact of transaction costs}
+\end{spacing}
+\end{frame}
+
+
+
+\begin{frame}{Vertical Differentiation Model}{}
+
+\begin{spacing}{1.5}
+{\small
+
+ \textbf{Main Questions:}
+    \begin{itemize}
+        \item How do transaction costs affect trade in secondary markets?
+        \item How do consumers with different valuations\\ for quality interact with goods of different vintages?
+        \item What role do intermediaries play in reducing frictions?
+    \end{itemize}\\
+    \quad\\
+\textbf{Key Assumptions:}
+    \begin{itemize}
+        \item Consumers have heterogeneous preferences for quality
+        \item Durable goods depreciate over time, creating a menu of qualities
+    \end{itemize}
+    }
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Vertical Differentiation Model}{Continued}
+\begin{spacing}{1.5}
+{\small
+
+    \textbf{Market:}\\
+    New goods are continuously produced, and used goods are traded in secondary markets\\
+\quad \\
+    \textbf{Utility:}
+    $$U(\theta, q, r) = \theta q - r$$
+ $\theta$ \quad - Consumer's marginal utility of quality\\
+  $q$ \quad - Quality of the good\\
+ $r$ \quad - Rental price of the good\\
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Vertical Differentiation Model}{Continued}
+\begin{spacing}{1.5}
+{\small
+    \textbf{Menu of Qualities:} \\
+    Goods have a range of quality levels $(q_1, q_2, \dots, q_n)$\\
+
+    \begin{itemize}
+        \item $q_1$: Quality of a new car (highest quality).
+        \item $q_n$: Quality of an old car (lowest quality, possibly scrapped).
+    \end{itemize}\\
+\quad\\
+    \textbf{Depreciation:}\\
+    Goods depreciate over time, creating a range of "vintages" (quality levels)\\
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Frictionless Market }{Benchmark Case}
+\begin{spacing}{1.5}
+{\small
+    \textbf{Efficient Trade:}\\
+    All goods are traded whenever they depreciate\\
+\quad\\
+    \textbf{Assortative Matching:} 
+    \begin{itemize}
+        \item Highest-valuation consumers consume new goods ($q_1$)
+        \item Lower-valuation consumers consume used goods ($q_2, q_3, \dots, q_n$)
+    \end{itemize}
+\quad\\
+    \textbf{Prices} are determined recursively based on indifference conditions\\
+     The price of a vintage i good ensures that the marginal consumer is indifferent between consuming vintage i and vintage i+1
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Market with Transaction Costs }{}
+\begin{spacing}{1.5}
+{\small
+    \textbf{Imperfect Matching:} \\
+    Transaction costs impede welfare-improving trades\\
+     \quad\\
+    \textbf{Coarser Quality Menu:}\\
+    Some vintages are not traded, reducing the range of available qualities \\
+    \quad\\
+    \textbf{Scrappage Decisions:}\\
+    Consumers may scrap low-quality goods rather than trading them \\
+    }
+\end{spacing}
+\end{frame}
+
+
+
+\subsection{Market power and secondary markets}
+
+
+
+\begin{frame}{Market Power and Secondary Markets }{}
+\begin{spacing}{1.5}
+{\small
+    \textbf{Key Idea:}\\
+    Monopolists producing durable goods face unique challenges due to competition from secondary markets\\
+\quad\\
+ {\small   \textbf{Main Questions:}
+    \begin{itemize}
+        \item How do monopolists influence secondary markets?
+        \item What role do intermediaries play   in secondary markets?
+        \item How does it affect consumer welfare and market efficiency?
+    \end{itemize}}
+
+    }
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Monopolists and Secondary Markets}{}
+\begin{spacing}{1.5}
+{\small
+    \textbf{Challenge:} \\
+    Goods sold today compete with goods sold in the future \\
+
+    {\textbf{Coase Conjecture:}\\
+    In the absence of commitment, a monopolist may lose market \\power over time because used goods compete with new goods\\}
+\quad\\
+    Monopolists can influence secondary markets by:
+    \begin{itemize}
+        \item Choosing the durability of goods.
+        \item Manipulating transaction costs.
+    \end{itemize}
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Swan's Theory of Durability}{}
+\begin{spacing}{1.75}
+{\small
+    \textbf{Key Assumption:}\\
+    Quantity and quality (durability) are perfect substitutes\\
+
+    \textbf{Implication:} \\
+    Under constant returns to scale, monopolist chooses socially optimal  durability\\
+
+    \textbf{Example:} \\
+    A monopolist producing light bulbs will make them last as long as\\
+    Social Planner would, but will produce less bulbs than socially optimal\\
+
+    \textbf{Limitation:}\\
+    Result depends on the assumption that quantity and quality are perfect substitutes
+
+    }
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Monopoly Distortions in Durability}{}
+\begin{spacing}{1.25}
+{\small
+    \textbf{When Quantity and Quality Are Not Perfect Substitutes:}\\
+     \textbf{\quad - Monopolists may distort durability to maximize profits}\\
+\quad\\
+    \textbf{Key Trade-Offs:}
+    \begin{itemize}
+        \item \textbf{Resale Value Effect}: \\
+        Higher durability increases the resale value of the good, making consumers willing to pay more for new goods
+        \item \textbf{Substitution Effect}:\\
+        Higher durability reduces demand for new goods, as used goods become better substitutes
+    \end{itemize}
+
+    \textbf{Monopolists may underprovide or overprovide durability,\\ depending on the relative strength of these effects}
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Manipulating Transaction Costs}{}
+\begin{spacing}{1.25}
+{\small
+   \textbf{Monopolists Can Influence Secondary Markets by:}
+    \begin{itemize}
+        \item Increasing transaction costs to shut down secondary markets
+        \item Reducing transaction costs to encourage trade in secondary markets
+    \end{itemize}
+\quad\\
+    \textbf{Examples:}
+    \begin{itemize}
+        \item \textbf{Alcoa Case}:\\
+        Monopolists may increase transaction costs to limit competition from used goods
+        \item \textbf{Hendel and Lizzeri (1999b)}: \\
+        If durability is endogenous, monopolists may prefer to reduce durability rather than shut down the secondary market.
+    \end{itemize}
+
+    }
+\end{spacing}
+\end{frame}
+
+
+\subsection{Role of Intermediaries}
+
+\begin{frame}{ Role of Intermediaries}{}
+\begin{spacing}{1.25}
+{\small
+    \textbf{Intermediaries can Reduce Transaction Costs by:}
+    \begin{itemize}
+        \item Certifying the quality of used goods (e.g., warranties, inspections)
+        \item Facilitating trade between buyers and sellers
+    \end{itemize}\\
+\quad\\
+    \textbf{Examples:}
+    \begin{itemize}
+        \item \textbf{Car Dealers}: Reduce search and information costs for buyers and sellers
+        \item \textbf{Aircraft Lessors}: Increase trading frequency and asset utilization
+    \end{itemize}\\
+\quad\\
+    \textbf{Welfare Effects:} \\
+    Intermediaries improve market efficiency but may extract rents 
+
+    }
+\end{spacing}
+\end{frame}
+
+
+\subsection{related literature \& key takeaways}
+
+\begin{frame}{Related Literature }{}
+\begin{spacing}{1.5}
+{\small
+Empirical studies of secondary markets include the following markets:\\
+\quad\\
+     \textbf{Used Car Market:}\\
+        Porter and Sattler, 1999; Adda and Cooper, 2000; Stolyarov, 2002; Esteban and Shum, 2007; Chen et al., 2013; Schiraldi, 2011
+\quad \\
+        
+    \textbf{Aircraft Market:}
+
+        Pulvino, 1998; Gavazza, 2011a,b;  Gavazza, 2016
+
+  
+
+    }
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Key Takeaways:}{}
+\begin{spacing}{1.75}
+{
+    \begin{itemize}
+        \item Monopolists can influence secondary markets through\\
+        durability and transaction costs
+        \item The trade-off between resale value and substitution\\
+        effects determines the monopolist's choice of durability
+        \item Intermediaries play a crucial role in reducing \\transaction costs and improving market efficiency
+    \end{itemize}
+    }
+\end{spacing}
+\end{frame}
+
+
+
+
+
+
+\section{Asymmetric Information}
+
+
+\begin{frame}{ }
+\centering
+{\Large Asymmetric Information}
+\end{frame}
+
+\subsection{Static Adverse Selection, Exogenous Ownership}
+
+
+\begin{frame}{ Static Adverse Selection, Exogenous Ownership }{}
+\begin{spacing}{1.5}
+
+{\small
+      \textbf{Akerlof (1970)}: "Market for Lemons"\\
+\begin{itemize}
+
+    \item Only sellers know quality $ q \sim U[0,1] $
+    \item At price $ P $, sellers offer cars with $ q \leq P $
+    \item Buyers expect average quality $ E(q) = P/2 $
+    \item Buyers' utility: \quad $ \theta_H E(q) - P \leq 0 $ for $ P \leq 1 $
+
+     \item[] \textbf{Key Insight}:\\
+     If buyers cannot distinguish between high- and low-quality goods, \\
+     market may collapse because only low-quality goods ("lemons") are traded
+\end{itemize}
+}
+\end{spacing}
+\end{frame}
+
+\subsection{Dynamic Trading with Exogenous Initial Ownership}
+\begin{frame}{ Dynamic Trading with Exogenous Initial Ownership}{}
+\begin{spacing}{1.5}
+ 
+{\small
+\textbf{Janssen \& Roy (2002, 2004)} \\
+    - Extend Akerlof to multi-period settings \\
+\begin{itemize}
+    \item High-quality sellers delay trade to signal quality
+    \item Prices rise over time
+    \item Trade occurs with inefficiency due to screening delays
+\end{itemize}
+\textbf{Horner \& Vieille (2009)}\\
+-  Compare case in which offers are private and in which offers are publicly observed
+\begin{itemize}
+    \item Public offers lead to no serious bids 
+    \item private offers eventually result in trade
+\end{itemize}
+}
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Dynamic Trading with Exogenous Initial Ownership}{Continued}
+\begin{spacing}{1.5}
+ 
+{\small
+\textbf{Daley \& Green (2012)} \\
+- public information about the quality of the good arrives over
+time \\
+-  the good is one of two possible qualities\\
+- news are a Brownian motion with a drift depending on the quality of the good
+\begin{itemize}
+    \item Intermediate beliefs halt trade
+    \item Very optimistic beliefs lead to immediate and efficient trade
+    \item Very pessimistic beliefs lead to trade being partial\\
+    - high type rejects equilibrium offers\\
+    - low type randomizes
+\end{itemize}
+ 
+}
+\end{spacing}
+\end{frame}
+
+\subsection{Endogenous Initial Ownership}
+\begin{frame}{Endogenous Initial Ownership}{ }
+\begin{spacing}{1.75}
+ 
+{\small
+\textbf{Hendel \& Lizzeri (1999a)} \\
+
+    \begin{itemize}
+        \item Integrate new/used markets
+        \item High-valuation consumers buy new goods, sell used ones
+        \item Adverse selection persists but does not collapse trade
+    \end{itemize}
+Important reason to sell used good is to enjoy the higher quality offered by a new one \\
+Used-good sellers are also new-good buyers, they are the consumers most sensitive to quality and who therefore have a high opportunity cost of holding on to a lemon
+}
+\end{spacing}
+\end{frame}
+
+\begin{frame}{Endogenous Initial Ownership}{Leasing }
+\begin{spacing}{1.5}
+ 
+{\small
+Leasing contracts specify a rental price for an initial period and an option price at which the lessee can choose to purchase good at the end of the lease period
+    \begin{itemize}
+        \item Hendel \& Lizzeri (2002):\\
+        Leasing with preset option prices mitigates adverse selection
+        \item Johnson \& Waldman (2003):\\
+        Optimal contracts segment markets but do not eliminate inefficiencies
+    \end{itemize}
+\textbf{Hendel et al. (2005)}:
+    \begin{itemize}
+        \item Dynamic depreciation models
+        \item Rental contracts (not sales) achieve first-best allocations
+    \end{itemize}
+}
+\end{spacing}
+\end{frame}
+
+ 
+
+\begin{frame}{Key Findings}{  }
+\begin{spacing}{1.25}
+ 
+{\small
+\textbf{Used Car Market:} \\
+Bond (1982) and Lacko (1986) find some evidence of adverse selection, \\particularly for older vehicles, where used cars require more maintenance\\  
+\quad\\
+\textbf{Business Aircraft Market: }\\
+Gilligan (2004) finds that less reliable aircraft brands experience higher depreciation \\and lower trading volumes, consistent with adverse selection\\
+\quad\\
+\textbf{Quality Disclosure:} \\
+Lewis (2011) shows that in online markets like eBay, sellers who provide more information (e.g., photos) achieve higher prices, indicating that reducing information asymmetry can improve market outcomes\\
+}
+\end{spacing}
+\end{frame}
+
+ 
+\subsection{Intermediaries in Asymmetric Information}
+ \begin{frame}{Intermediaries in Asymmetric Information}{}
+\begin{spacing}{1.5}
+ 
+{\small
+\textbf{Certification }:\\
+Intermediaries can certify product quality, reducing information asymmetry\\
+For example, dealers may offer warranties or inspections to assure buyers of quality\\
+\textbf{Empirical Evidence:}\\
+Genesove (1993) finds that dealers who sell both new and used cars are more likely to sell older used cars at wholesale auctions, consistent with their role in mitigating adverse selection\\
+\textbf{Dealer Premiums:}\\
+Biglaiser et al. (2020) show that dealers charge a premium for used cars, particularly for unreliable models, as they provide quality assurance
+  
+
+}
+\end{spacing}
+\end{frame}
+
+ \begin{frame}{Intermediaries in Asymmetric Information}{Continued}
+\begin{spacing}{1.5}
+ 
+{\small
+\textbf{Lizzeri (1999):}\\
+Intermediaries may have incentives to withhold information to maximize their profits, leading to inefficiencies\\
+For example, if sellers pay for certification, intermediaries may reveal no information to capture all surplus\\
+\quad \\
+\textbf{Conflicts of Interest:} \\Intermediaries   may have conflicts of interest, as their commissions may not align with the best interests of buyers or sellers
+}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Key Takeaways:}{}
+\begin{spacing}{1.5}
+{\small
+\textbf{Adverse Selection:}\\ Asymmetric information can lead to market inefficiencies, such as reduced trade or market breakdowns, particularly in durable goods markets\\
+\textbf{Mitigating Mechanisms:}\\ Leasing contracts, intermediaries, and quality disclosure can help mitigate adverse selection by reducing information asymmetry\\
+\textbf{Empirical Challenges:}\\ Measuring the effects of asymmetric information is difficult due to unobserved heterogeneity and the complexity of real-world markets\\
+\textbf{Role of Intermediaries:}\\ While intermediaries can improve market efficiency by certifying quality, they may also exploit their position to extract surplus, leading to mixed welfare effects
+
+    }
+\end{spacing}
+\end{frame}
+\end{document}
